@@ -22,9 +22,9 @@ function MovingBackground() {
     cssEase: "linear"
   };
   return (
-    
-    <motion.div animate={{rotate:-18}} className="slider-container mt-14 mx-8 lg:mx-14 py-3  opacity-75 h-screen">
-    <Slider ani  {...settings} className='  '>
+    <div className='container hidden md:block'>
+    <motion.div animate={{rotate:-18}} className="slider-container mt-14 mx-8 lg:mx-14 py-3 opacity-75 h-screen">
+    <Slider {...settings} className=''>
       <div className=''>
         <img className='w-[22em] h-[15em] opacity-90' src="https://images.pexels.com/photos/8939307/pexels-photo-8939307.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
       </div>
@@ -62,7 +62,7 @@ function MovingBackground() {
   </motion.div>
             
        
-      
+  </div>    
   
   )
 }

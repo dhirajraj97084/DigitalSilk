@@ -2,6 +2,8 @@ import React from 'react'
 import { FaCaretRight } from "react-icons/fa6";
 import MovingBackground from './MovingBackground';
 import Web_agency from './Web_agency';
+import Heading from '../our_Work/Heading';
+
 
 
 function Hero_Section() {
@@ -24,6 +26,7 @@ function Hero_Section() {
       </div>
       <MovingBackground/>
      <Web_agency/>
+     {/* <Heading/> */}
     </div>
   )
 }
