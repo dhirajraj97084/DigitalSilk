@@ -44,14 +44,16 @@ function Web_agency() {
           </div>
         </div>
         <div className="video  pb-6  ">
-          <Link className='flex justify-center items-center gap-2' to={'https://www.digitalsilk.com/wp-content/uploads/2022/07/video.mp4'} >          
+          <div className='flex justify-center items-center gap-2'  > 
+          <Link to={'https://www.digitalsilk.com/wp-content/uploads/2022/07/video.mp4'}>         
           <MdOutlineSlowMotionVideo className='text-indigo-500 text-6xl hover:text-blue-700 ' />
+          </Link>
           <div className="div">            
             <h1 className='text-white  font-semibold cursor-pointer '>SEE OUR WORK</h1>
             <h2 className='text-white text-3xl font-bold cursor-pointer '>IN ACTION</h2>
             <h3 className='text-white text-sm font-bold cursor-pointer '>2 MINUTES</h3>
           </div>          
-          </Link>
+          </div>
           {/* <hr className='my-6 bg-slate-300 px-12' />          */}
          
           </div>

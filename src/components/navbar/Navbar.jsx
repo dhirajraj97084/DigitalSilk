@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { FaBarsStaggered, FaX } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; 
+import { animate, delay, motion, transform } from 'framer-motion'; 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+
+   
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -46,13 +49,13 @@ const Navbar = () => {
                     onClick={toggleDropdown}
                   >
                     <div className="absolute  text-center rounded-md  bg-[#418ae9]">
-                      <motion.div animate={{y:-100}} className="py-1" role="none">
+                      <motion.div animate={{y:-100}} transition={{duration:0.5 , delay:0}} className="py-1" role="none">
                         <Link
                           to={'/'}
                           className="block px-4 py-2 my-4 text-2xl md:text-4xl underline underline-offset-8 decoration-lime-500 font-bold text-white "
                           role="menuitem"
                         >
-                          <motion.h1 whileHover={{scale:0.8}}>Home</motion.h1>
+                          <motion.h1 whileHover={{scale:0.8}} >Home</motion.h1>                        
                         </Link>
                         <Link
                           to={'service'}
